@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Main card container for the weather app -->
+    <div class="card">
+
+        <!-- Search section for entering city names -->
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <!-- Button to trigger the search -->
+            <button>
+                <img src="images/search.png" alt="Search Icon">
+            </button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+
+        <!-- Weather information display area -->
+        <div class="weather">
+            <!-- Weather condition icon (e.g., rain, clear, etc.) -->
+            <img src="images/rain.png" class="weather-icon">
+
+            <!-- Displays the temperature -->
+            <h1 class="temp">22°C</h1>
+
+            <!-- Displays the city name -->
+            <h2 class="city">New York</h2>
+
+            <!-- Container for additional weather details like humidity and wind speed -->
+            <div class="details">
+
+                <!-- Humidity information -->
+                <div class="col">
+                    <img src="images/humidity.png" alt="Humidity Icon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <!-- Wind speed information -->
+                <div class="col">
+                    <img src="images/wind.png" alt="Wind Icon">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div> <!-- End of details -->
+        </div> <!-- End of weather section -->
+    </div> <!-- End of card -->
+
+    <!-- Link to external JavaScript file for weather functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
